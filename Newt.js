@@ -1,4 +1,4 @@
-let soundElementCat = document.getElementById("catsound");
+//*let soundElementCat = document.getElementById("catsound");
 
 function pushTheButton(){
     soundElementCat.onplay()
