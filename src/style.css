@@ -1,97 +1,111 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after { 
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  padding: 0;
   background-image: url(/Multimedia/Background.png);
   background-size: cover;
-  font-family: "Raleway", serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
 }
 
 .page-title {
-  text-align: center;
-  font-weight: 500;
-  font-size: 2em;
-  left: 10%;
-  position: relative;
-}
-
-.quote-container {
-  width: fit-content;
-  height: 276px;
-  position: relative;
-  margin: 0 auto;
-  right: 70px;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: black;
 }
 
 .ellipse {
-  background: #ffeded;
-  border-radius: 70%;
-  position: relative;
+  border-radius: 50%;
+  background-color: #ffe6ea;
 }
 
 .ellipse-22 {
-  width: fit-content;
-  height: 220px;
-  left: 25%;
   position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 70px auto;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   text-align: center;
+  background-color: #ffe6ea;
+  color: #8a226f;
 }
 
 .quote-text {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1;
+}
+
+.quote-container {
+  position: relative;
 }
 
 .ellipse-2 {
   width: 20px;
   height: 20px;
-  left: 72%;
-  bottom: 0;
-  top: 28.57%;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  background: #ffeded;
+  border-radius: 50%;
 }
 
 .ellipse-3 {
-  width: 25px;
-  height: 25px;
-  left: 54%;
-  bottom: 11.96%;
-  top: 9%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  background: #ffeded;
+  border-radius: 50%;
 }
 
 .ellipse-4 {
-  width: 30px;
-  height: 30px;
-  left: 36%;
-  bottom: 20.19%;
-  margin-top: 5%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 140%;
+  left: 40%;
+  background: #ffeded;
+  border-radius: 50%;
+}
+
+.image-container img {
+  width: 150px; 
+  margin: 100px auto 10px;
+  display: block;
 }
 
 button {
-  align-self: center;
   background-color: #8a226f;
-  border-radius: 40px;
-  width: 196px;
-  height: 83px;
-  position: relative;
-  cursor: pointer;
-  border: none;
   color: white;
-  font-family: "Raleway", serif;
-  font-size: 2em;
-  font-weight: 500;
-  margin-bottom: 24px;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #6b1855;
 }
