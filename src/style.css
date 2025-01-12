@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(/Multimedia/Background.png);
+  background-size: cover;
+  font-family: "Raleway", serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+  left: 10%;
+  position: relative;
+}
+
+.quote-container {
+  width: fit-content;
+  height: 276px;
+  position: relative;
+  margin: 0 auto;
+  right: 70px;
+}
+
+.ellipse {
+  background: #ffeded;
+  border-radius: 70%;
+  position: relative;
+}
+
+.ellipse-22 {
+  width: fit-content;
+  height: 220px;
+  left: 25%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.quote-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.2em;
+}
+
+.ellipse-2 {
+  width: 20px;
+  height: 20px;
+  left: 72%;
+  bottom: 0;
+  top: 28.57%;
+}
+
+.ellipse-3 {
+  width: 25px;
+  height: 25px;
+  left: 54%;
+  bottom: 11.96%;
+  top: 9%;
+}
+
+.ellipse-4 {
+  width: 30px;
+  height: 30px;
+  left: 36%;
+  bottom: 20.19%;
+  margin-top: 5%;
+}
+
+button {
+  align-self: center;
+  background-color: #8a226f;
+  border-radius: 40px;
+  width: 196px;
+  height: 83px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-family: "Raleway", serif;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 24px;
+}

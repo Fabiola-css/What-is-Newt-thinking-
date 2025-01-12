@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>What is Newt Thinking?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-     <header></header>
-     <main>
-         <h1>What is Newt Thinking?</h1>
+    <main>
+        <section class="main-container">
+            <h1 class="page-title">What is Newt Thinking?</h1>
 
-       <div class="component-2">
-            <div class="ellipse ellipse-22"></div>
-            <div class="ellipse ellipse-2"></div>
-            <div class="ellipse ellipse-3"></div>
-            <div class="ellipse ellipse-4"></div>
+            <div class="quote-container">
+                <div class="ellipse ellipse-22">
+                    <p class="quote-text" id="text"> </p>
+                </div>
+                <div class="ellipse ellipse-2"></div>
+                <div class="ellipse ellipse-3"></div>
+                <div class="ellipse ellipse-4"></div>
+            </div>
 
-            <!-- <audio  id="catsound"><source  src="Cat Sound/meow.mp3" type="audio.mp3"></audio>
-            <button>Enter</button><-->
-        </div>
+            <div class="image-container">
+                <img src="./Multimedia/newt.png" alt="image of a cat thinking">
+            </div>
 
-        <div class="Image">
-          <img src="./Multimedia/newt.png" alt="image of a cat thinking">
-        </div>
-
-        <div class="button">
-            <div class="symbol">▶</div>
-            <div class="label">Play</div>
-            <h1>Newt</h1>
-        </div>
+            <button id="changeFact">Start</button>
+        </section>
     </main>
-    <footer><img class="favorite" src="favorite.png"  alt="favoritos"></footer>
-  
-    
-</body>
-</html>
 
+    <script src="./src/functions.js" type="module"></script>
+
+</body>
+
+</html>
