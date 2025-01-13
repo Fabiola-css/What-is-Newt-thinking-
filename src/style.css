@@ -16,6 +16,20 @@ body {
   flex-direction: column;
 }
 
+.favorite,
+.favorite { 
+  box-sizing: border-box;
+}
+.favorite {
+  width: 63px;
+  height: 67px;
+  top: 0; 
+  right: 0;
+  margin: 10px; 
+  position:absolute;
+  overflow: visible;
+}
+
 .page-title {
   text-align: center;
   font-weight: 500;
