@@ -1,0 +1,61 @@
+.ellipse {
+  background: #ffeded;
+  border-radius: 70%;
+  position: relative;
+}
+
+.ellipse-22 {
+  width: fit-content;
+  height: 220px;
+  left: 25%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.ellipse-22 {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffe6ea;
+    color: #8a226f;
+  }
+
+.quote-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.2em;
+}
+
+.ellipse-2 {
+  width: 20px;
+  height: 20px;
+  left: 72%;
+  bottom: 0;
+  top: 28.57%;
+}
+
+.ellipse-3 {
+  width: 25px;
+  height: 25px;
+  left: 54%;
+  bottom: 11.96%;
+  top: 9%;
+}
+
+.ellipse-4 {
+  width: 30px;
+  height: 30px;
+  left: 36%;
+  bottom: 20.19%;
+  margin-top: 5%;
+}
