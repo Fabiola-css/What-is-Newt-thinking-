@@ -34,3 +34,12 @@ function showRandomFact(randomFact) {
 
 let button = document.querySelector("#changeFact");
 button.addEventListener("click", getFact);
+
+
+/*let Btn = document.getElementById("#changeFact");
+let audio = document.getElementById("#startSound");
+
+Btn.addEventListener(`"click", function()`);{
+  startSound.play()
+
+}*/
