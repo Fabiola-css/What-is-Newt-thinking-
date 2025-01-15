@@ -1,4 +1,3 @@
-//*let soundElementCat = document.getElementById("catsound");
 async function getFact() {
   const API_URL =
     "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
@@ -17,7 +16,6 @@ async function getFact() {
 
     localStorage.setItem("quote", JSON.stringify(randomFact));
 
-    //const favQuote = localStorage.getItem("quote");
 
     const savedFact = JSON.parse(localStorage.getItem("quote"));
     console.log(savedFact);
