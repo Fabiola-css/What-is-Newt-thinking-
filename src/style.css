@@ -38,7 +38,6 @@ body {
 .ellipse-22 {
   position: relative;
   width: 18.75rem;
-  height: 12.5rem;
   margin: auto;
   padding: 20px;
   display: flex;
@@ -51,6 +50,7 @@ body {
 
 .quote-text {
   font-size: 1em;
+  padding: 0.5em;
   line-height: 1;
 }
 
