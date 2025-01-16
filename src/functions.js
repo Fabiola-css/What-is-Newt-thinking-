@@ -33,6 +33,8 @@ function gameArea() {
   document.querySelector(".quote-container").removeAttribute("hidden");
   document.querySelector("#changeFact").removeAttribute("hidden");
   document.querySelector("#startGame").setAttribute("hidden", "");
+  const musicPlayer = document.getElementById("audiocat");
+  musicPlayer.play();
 }
 
 let startButton = document.querySelector("#startGame");
@@ -40,3 +42,5 @@ startButton.addEventListener("click", gameArea);
 
 let nextButton = document.querySelector("#changeFact");
 nextButton.addEventListener("click", getFact);
+
+
