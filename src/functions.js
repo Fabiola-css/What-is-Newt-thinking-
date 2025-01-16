@@ -16,7 +16,6 @@ async function getFact() {
 
     localStorage.setItem("quote", JSON.stringify(randomFact));
 
-
     const savedFact = JSON.parse(localStorage.getItem("quote"));
     console.log(savedFact);
   } catch (error) {
@@ -30,5 +29,14 @@ function showRandomFact(randomFact) {
   random.textContent = randomFact;
 }
 
-let button = document.querySelector("#changeFact");
-button.addEventListener("click", getFact);
+function gameArea() {
+  document.querySelector(".quote-container").removeAttribute("hidden");
+  document.querySelector("#changeFact").removeAttribute("hidden");
+  document.querySelector("#startGame").setAttribute("hidden", "");
+}
+
+let startButton = document.querySelector("#startGame");
+startButton.addEventListener("click", gameArea);
+
+let nextButton = document.querySelector("#changeFact");
+nextButton.addEventListener("click", getFact);
