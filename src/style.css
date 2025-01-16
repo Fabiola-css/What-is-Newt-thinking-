@@ -16,6 +16,25 @@ body {
   min-height: 100vh;
   color: #333;
 }
+.favorite{
+  padding: 0; 
+  border: none; 
+  background: transparent;
+  cursor: pointer; 
+  position: absolute;
+}
+.favorite {
+  width: 63px;
+  height: 67px;
+  top: 0; 
+  right: 0;
+  margin: 10px; 
+  position:absolute;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .main-container {
   text-align: center;
@@ -106,6 +125,6 @@ button {
   transition: 0.3s ease;
 }
 
-button:hover {
+#changeFact:hover {
   background-color: #6b1855;
 }
