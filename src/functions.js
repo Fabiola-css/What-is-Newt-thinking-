@@ -32,6 +32,8 @@ function randomQuoteDisplay() {
   document.querySelector(".quote-container").removeAttribute("hidden");
   document.querySelector("#changeFact").removeAttribute("hidden");
   document.querySelector("#startGame").setAttribute("hidden", "");
+  const musicPlayer = document.getElementById("audiocat");
+  musicPlayer.play();
 }
 
 function changeNewtPicture() {
