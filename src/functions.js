@@ -1,4 +1,6 @@
-async function getFact() {
+import pictureCarousel from "./pictureCarousel.js";
+
+async function getRandomFact() {
   const API_URL =
     "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
   try {
@@ -8,11 +10,9 @@ async function getFact() {
     }
 
     const json = await response.json();
-    console.log(json);
 
     let randomFact = json.text;
     showRandomFact(randomFact);
-    console.log(randomFact);
 
     localStorage.setItem("quote", JSON.stringify(randomFact));
 
@@ -22,21 +22,23 @@ async function getFact() {
     console.error(error.message);
   }
 }
-getFact();
 
 function showRandomFact(randomFact) {
   let random = document.querySelector("#text");
   random.textContent = randomFact;
 }
 
-function gameArea() {
+function randomQuoteDisplay() {
   document.querySelector(".quote-container").removeAttribute("hidden");
   document.querySelector("#changeFact").removeAttribute("hidden");
   document.querySelector("#startGame").setAttribute("hidden", "");
 }
 
-let startButton = document.querySelector("#startGame");
-startButton.addEventListener("click", gameArea);
+function changeNewtPicture() {
+  let catImage = document.querySelector("#catImage");
+  const changePicture = pictureCarousel.shift();
+  pictureCarousel.push(changePicture);
+  catImage.src = changePicture;
+}
 
-let nextButton = document.querySelector("#changeFact");
-nextButton.addEventListener("click", getFact);
+export { getRandomFact, randomQuoteDisplay, changeNewtPicture };
