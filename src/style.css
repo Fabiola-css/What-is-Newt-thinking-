@@ -1,5 +1,6 @@
 *, *::before, *::after { 
   box-sizing: border-box;
+  
 }
 
 body {
@@ -14,7 +15,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #333;
+  
+ 
+ 
 }
 .favorite{
   padding: 0; 
@@ -128,3 +131,91 @@ button {
 #changeFact:hover {
   background-color: #6b1855;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+.ballwool {
+  position: absolute;
+  display: flex;
+  animation: ballwool 5s linear infinite;
+}
+
+@keyframes ballwool {
+  0% {
+    transform: translateY(0);
+    
+  }
+  100% {
+    transform: translateY(100vh); 
+}
+}
+
+
+.ballwool:nth-child(1){
+  left:50%;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.ballwool:nth-child(2){
+  left: 30%;
+  top: 0;
+  animation-delay: 2s;
+}
+
+.ballwool:nth-child(3){
+  left: 10%;
+  top: 0;
+  animation-delay: 3s;
+  
+}
+
+.ballwool:nth-child(4){
+  left:70%;
+  top: 0;
+  animation-delay: 4s;
+}
+
+.ballwool:nth-child(5){
+  left:80%;
+  top: 0;
+  animation-delay: 5s;
+}
+
+.ballwool:nth-child(6){
+  top: 0;
+  left: 90%;
+  animation-delay: 6s;
+}
+
+
+
+.mouse {
+  
+  width: 100px ;
+  height: auto ;
+  object-fit: cover;
+  position: absolute;
+  top: 80%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation: moveMouse 7s infinite linear;
+ 
+ } 
+ 
+@keyframes moveMouse{
+  0%{
+   right: -100px;
+  }
+  50%{
+    right: 50%;
+  }
+  100%{
+    right: 100vw;
+  }
+}
+
+
+
+
