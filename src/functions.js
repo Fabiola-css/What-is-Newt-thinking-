@@ -1,4 +1,6 @@
-async function getFact() {
+import pictureCarousel from "./pictureCarousel.js";
+
+async function getRandomFact() {
   const API_URL =
     "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
   try {
@@ -8,26 +10,20 @@ async function getFact() {
     }
 
     const json = await response.json();
-    console.log(json);
 
     let randomFact = json.text;
     showRandomFact(randomFact);
-    console.log(randomFact);
-
-    const savedFact = JSON.parse(localStorage.getItem("quote"));
-    console.log(savedFact);
   } catch (error) {
     console.error(error.message);
   }
 }
-getFact();
 
 function showRandomFact(randomFact) {
   let random = document.querySelector("#text");
   random.textContent = randomFact;
 }
 
-function gameArea() {
+function randomQuoteDisplay() {
   document.querySelector(".quote-container").removeAttribute("hidden");
   document.querySelector("#changeFact").removeAttribute("hidden");
   document.querySelector("#startGame").setAttribute("hidden", "");
@@ -35,26 +31,26 @@ function gameArea() {
   musicPlayer.play();
 }
 
-let startButton = document.querySelector("#startGame");
-startButton.addEventListener("click", gameArea);
+function changeNewtPicture() {
+  let catImage = document.querySelector("#catImage");
+  const changePicture = pictureCarousel.shift();
+  pictureCarousel.push(changePicture);
+  catImage.src = changePicture;
+}
 
-let nextButton = document.querySelector("#changeFact");
-nextButton.addEventListener("click", getFact);
+const favoriteButton = document.querySelector(".favorite");
+const favoritesList = document.getElementById("favorites-list");
+const returnButton = document.getElementById("return-btn");
+const mainContent = document.getElementById("main-container");
 
-
-const favoriteButton = document.querySelector('.favorite');
-const favoritesList = document.getElementById('favorites-list');
-const returnButton = document.getElementById('return-btn');
-const mainContent = document.getElementById('main-container');
-
-
-favoriteButton.addEventListener('click', () => {
-    mainContent.classList.add('hidden');  
-    favoritesList.classList.remove('hidden');  
+favoriteButton.addEventListener("click", () => {
+  mainContent.classList.add("hidden");
+  favoritesList.classList.remove("hidden");
 });
 
-
-returnButton.addEventListener('click', () => {
-    mainContent.classList.remove('hidden'); 
-    favoritesList.classList.add('hidden');  
+returnButton.addEventListener("click", () => {
+  mainContent.classList.remove("hidden");
+  favoritesList.classList.add("hidden");
 });
+
+export { getRandomFact, randomQuoteDisplay, changeNewtPicture };

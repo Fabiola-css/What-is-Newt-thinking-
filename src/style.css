@@ -1,6 +1,7 @@
-*, *::before, *::after { 
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  
 }
 
 body {
@@ -15,24 +16,21 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
- 
- 
 }
-.favorite-btn{
-  padding: 0; 
-  border: none; 
+.favorite-btn {
+  padding: 0;
+  border: none;
   background: transparent;
-  cursor: pointer; 
+  cursor: pointer;
   position: absolute;
 }
-.favorite-btn{
+.favorite-btn {
   width: 63px;
   height: 67px;
-  top: 0; 
+  top: 0;
   right: 0;
-  margin: 10px; 
-  position:absolute;
+  margin: 10px;
+  position: absolute;
   overflow: visible;
   display: flex;
   justify-content: center;
@@ -54,10 +52,10 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s ease;
-  position:absolute;
-  top: 50px;  
+  position: absolute;
+  top: 50px;
   left: 50px;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 .favorites-list {
   background-color: #ffe6ea;
@@ -68,12 +66,11 @@ body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   position: relative;
-  flex-direction: column;  
-  justify-content: center; 
-  align-items: center;     
-  height: 300px
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
-
 
 #return-btn:hover {
   background-color: #8a226f;
@@ -150,7 +147,7 @@ body {
 }
 
 .image-container img {
-  width: 150px; 
+  width: 150px;
   margin: 100px auto 10px;
   display: block;
 }
@@ -183,78 +180,67 @@ button {
 @keyframes ballwool {
   0% {
     transform: translateY(0);
-    
   }
   100% {
-    transform: translateY(100vh); 
-}
+    transform: translateY(100vh);
+  }
 }
 
-
-.ballwool:nth-child(1){
-  left:50%;
+.ballwool:nth-child(1) {
+  left: 50%;
   top: 0;
   animation-delay: 0s;
 }
 
-.ballwool:nth-child(2){
+.ballwool:nth-child(2) {
   left: 30%;
   top: 0;
   animation-delay: 2s;
 }
 
-.ballwool:nth-child(3){
+.ballwool:nth-child(3) {
   left: 10%;
   top: 0;
   animation-delay: 3s;
-  
 }
 
-.ballwool:nth-child(4){
-  left:70%;
+.ballwool:nth-child(4) {
+  left: 70%;
   top: 0;
   animation-delay: 4s;
 }
 
-.ballwool:nth-child(5){
-  left:80%;
+.ballwool:nth-child(5) {
+  left: 80%;
   top: 0;
   animation-delay: 5s;
 }
 
-.ballwool:nth-child(6){
+.ballwool:nth-child(6) {
   top: 0;
   left: 90%;
   animation-delay: 6s;
 }
 
-
-
 .mouse {
-  
-  width: 100px ;
-  height: auto ;
+  width: 100px;
+  height: auto;
   object-fit: cover;
   position: absolute;
   top: 80%;
   overflow-x: hidden;
   overflow-y: hidden;
   animation: moveMouse 7s infinite linear;
- 
- } 
- 
-@keyframes moveMouse{
-  0%{
-   right: -100px;
+}
+
+@keyframes moveMouse {
+  0% {
+    right: -100px;
   }
-  50%{
+  50% {
     right: 50%;
   }
-  100%{
+  100% {
     right: 100vw;
   }
 }
-
-
-
-
