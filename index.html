@@ -7,43 +7,51 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>What is Newt thinking?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <main>
-        <header> <button class="favorite" type="submit">
-                <img class="favorite" src="Multimedia/favorite.png" alt="favoritos"></button>
-        </header>
-        <section class="main-container">
+         <header>
+             <button class="favorite-btn" type="submit">
+        <img class="favorite" src="Multimedia/favorite.png"  alt="favoritos">
+    </button>
+    <div id="favorites-list" class="favorites-list hidden">
+        <h1>Favorite list</h1>
+        <ul id="favorites-items">
+            <li>Favorito 1</li>
+            <li>Favorito 2</li>
+            <li>Favorito 3</li>
+        </ul>
+        <button id="return-btn" type="button">Return</button>
+    </div>
+</header>
+        <section id="main-container" class="main-container">
             <h1 class="page-title">What is Newt Thinking?</h1>
 
-            <div class="quote-container" hidden>
+             <div class="quote-container" hidden>
                 <div class="ellipse ellipse-22">
                     <p class="quote-text" id="text"> </p>
-                    <div class="ellipse ellipse-2"></div>
-                    <div class="ellipse ellipse-3"></div>
-                    <div class="ellipse ellipse-4"></div>
-                </div>
+                <div class="ellipse ellipse-2"></div>
+                <div class="ellipse ellipse-3"></div>
+                <div class="ellipse ellipse-4"></div>
             </div>
+        </div>
 
             <div class="image-container">
-                <img id="catImage" src="./Multimedia/newt.png" alt="image of a cat thinking">
+                <img src="./Multimedia/newt.png" alt="image of a cat thinking">
             </div>
 
             <button id="changeFact" hidden>Next</button>
             <button id="startGame" >Start</button>
             <audio id="audiocat" src="./Multimedia/meow.mp3"></audio>
-            
-          
+
         </section>
     </main>
 
     <script src="./src/functions.js" type="module"></script>
     <script src="./src/events.js" type="module"></script>
-
 </body>
 
 </html>
