@@ -46,11 +46,14 @@ const mainContent = document.getElementById("main-container");
 favoriteButton.addEventListener("click", () => {
   mainContent.classList.add("hidden");
   favoritesList.classList.remove("hidden");
+  favoritesList.classList.add("show");
 });
 
 returnButton.addEventListener("click", () => {
   mainContent.classList.remove("hidden");
   favoritesList.classList.add("hidden");
+  favoritesList.classList.add("hidden");
+  favoritesList.classList.remove("show");
 });
 
 export { getRandomFact, randomQuoteDisplay, changeNewtPicture };
